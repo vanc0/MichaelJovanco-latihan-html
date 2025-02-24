@@ -6,6 +6,35 @@
     <title>Claim Garansi</title>
 </head>
 <body>
+    <img src="gambar/Honda_Logo.svg.png" alt="Logo Honda" width="110">
+    <h1>Claim Garansi</h1>
+    <hr style="border: 2px solid">
+    <form action="garansi.php" method="post">
+        Nama <br>
+        <input type="text" name="nama" id="nama" required><br><br>
+        Nomor Telepon <br>
+        <input type="number" name="notelp" id="notelp" required><br><br>
+        Email <br>
+        <input type="email" name="email" id="email" required><br><br>
+        Motor <br>
+        <select name="motor" id="motor" required>   
+            <option value="v160">Vario 160</option>
+            <option value="a160">ADV 160</option>
+            <option value="p160">PCX 160</option>
+            <option value="v125">Vario 125</option>
+            <option value="b">Beat</option>
+            <option value="bs">Beat Street</option>
+            <option value="st">Stylo 160</option>
+            <option value="sc">Scoopy</option>
+            <option value="g">Genio</option>  
+        </select><br><br>
+        Alasan / Keluhan <br>
+        <textarea name="alasan" id="alasan"></textarea><br><br><br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <br>
+    <hr style="border: 2px solid"> 
     <a href="home.html">Kembali</a>
 </body>
 </html>
